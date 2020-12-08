@@ -2,7 +2,7 @@ package com.ricardoteixeira.data.model
 
 import com.google.gson.annotations.SerializedName
 
-class MovieResponse (
+class MoviesResponse (
 
     @SerializedName("page")
     var page: Int? = null,
@@ -13,6 +13,6 @@ class MovieResponse (
     @SerializedName("total_pages")
     var totalPages: Int? = null,
 
-    @SerializedName("page")
+    @SerializedName("results")
     var results: List<Movie>? = null
 )

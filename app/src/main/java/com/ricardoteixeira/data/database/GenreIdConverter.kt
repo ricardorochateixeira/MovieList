@@ -21,7 +21,7 @@ class GenreIdConverter {
     }
 
     @TypeConverter
-    fun genreListToString(genreId: List<Int>): String {
+    fun genreListToString(genreId: List<Int>?): String {
 
         if (genreId == null) {
             return gson.toJson(Collections.emptyList<Int>())

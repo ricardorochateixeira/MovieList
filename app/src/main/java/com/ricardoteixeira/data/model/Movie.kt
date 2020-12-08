@@ -12,15 +12,14 @@ data class Movie(
     @SerializedName("backdrop_path")
     var backdropPath: String? = null,
 
-    @SerializedName("backdrop_path")
+    @SerializedName("adult")
     var adult: Boolean? = null,
 
-    @Embedded(prefix = "genres_")
-    @SerializedName("id")
+    @SerializedName("genres")
     var genresId: List<Int?>? = null,
 
     @SerializedName("id")
-    @PrimaryKey(autoGenerate = false)
+    @PrimaryKey(autoGenerate = true)
     var id: Int? = null,
 
     @SerializedName("original_language")
